@@ -1,0 +1,20 @@
+# Cấu hình bỏ qua các file không đưa lên Git
+node_modules/
+backend/node_modules/
+web-admin/node_modules/
+
+# Mật khẩu và cấu hình nhạy cảm (CỰC KỲ QUAN TRỌNG)
+.env
+.env.local
+backend/.env
+web-admin/.env
+
+# Các file Build (VPS sẽ tự build)
+dist/
+web-admin/dist/
+build/
+dist-electron/
+
+# Khác
+.DS_Store
+*.log

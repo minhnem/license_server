@@ -1,0 +1,13 @@
+{
+  "name": "license-server",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run admin\"",
+    "server": "cd backend && npm run dev",
+    "admin": "cd web-admin && npm run dev",
+    "install-all": "cd backend && npm install && cd ../web-admin && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
